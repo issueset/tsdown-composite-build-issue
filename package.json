@@ -1,17 +1,11 @@
 {
-  "name": "tsdown-composite",
+  "name": "issue-286",
   "version": "1.0.0",
-  "description": "",
   "type": "module",
-  "main": "index.js",
   "scripts": {
-    "build:tsdown": "tsdown",
+    "build:tsdown": "tsdown --entry src/dom/dom.ts --entry src/node/node.ts --outDir dist/dist_tsdown --format esm --dts",
     "build:tsc": "tsc --build ."
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "packageManager": "pnpm@10.11.0",
   "devDependencies": {
     "@types/node": "22.15.29",
     "tsdown": "0.12.5",
