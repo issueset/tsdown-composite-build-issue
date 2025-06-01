@@ -7,13 +7,17 @@ settings:
 importers:
 
   .:
+    dependencies:
+      rolldown-plugin-dts:
+        specifier: file:~/.config/packlink/rolldown-plugin-dts-0.13.7-1748768175379.tgz
+        version: file:../../../Users/ocavue/.config/packlink/rolldown-plugin-dts-0.13.7-1748768175379.tgz(rolldown@1.0.0-beta.10-commit.87188ed)(typescript@5.8.3)
     devDependencies:
       '@types/node':
         specifier: 22.15.29
         version: 22.15.29
       tsdown:
-        specifier: 0.12.5
-        version: 0.12.5(typescript@5.8.3)
+        specifier: file:~/.config/packlink/tsdown-0.12.5-1748760041882.tgz
+        version: file:../../../Users/ocavue/.config/packlink/tsdown-0.12.5-1748760041882.tgz(rolldown-plugin-dts@file:../../../Users/ocavue/.config/packlink/rolldown-plugin-dts-0.13.7-1748768175379.tgz(rolldown@1.0.0-beta.10-commit.87188ed)(typescript@5.8.3))(typescript@5.8.3)
       typescript:
         specifier: 5.8.3
         version: 5.8.3
@@ -227,8 +231,9 @@ packages:
   resolve-pkg-maps@1.0.0:
     resolution: {integrity: sha512-seS2Tj26TBVOC2NIc2rOe2y2ZO7efxITtLZcGSOnHHNOQ7CkiUBfw0Iw2ck6xkIhPwLhKNLS8BO+hEpngQlqzw==}
 
-  rolldown-plugin-dts@0.13.6:
-    resolution: {integrity: sha512-eeiRAhGWK/v3hFFSWQ1FeE+tvRIIKxGH7uA/THMC1FD3HuTtltxx79+8TqAuD4msfgApJyB9k4Gu3YSWPwkTIQ==}
+  rolldown-plugin-dts@file:../../../Users/ocavue/.config/packlink/rolldown-plugin-dts-0.13.7-1748768175379.tgz:
+    resolution: {integrity: sha512-ciTY06qXGxqI+939V1439upyl1TWKX2tx73TduhGAKvoSmC7e2HAJ6lJrBRX57dBSGl6jYttW+2zYmhxKrJoFA==, tarball: file:../../../Users/ocavue/.config/packlink/rolldown-plugin-dts-0.13.7-1748768175379.tgz}
+    version: 0.13.7
     engines: {node: '>=20.18.0'}
     peerDependencies:
       rolldown: ^1.0.0-beta.9
@@ -256,16 +261,21 @@ packages:
     resolution: {integrity: sha512-tX5e7OM1HnYr2+a2C/4V0htOcSQcoSTH9KgJnVvNm5zm/cyEWKJ7j7YutsH9CxMdtOkkLFy2AHrMci9IM8IPZQ==}
     engines: {node: '>=12.0.0'}
 
-  tsdown@0.12.5:
-    resolution: {integrity: sha512-5tzqVakJOdIVJLBB6K1e7L4pPTkyLxArkidwsY1jd4P1/4GplYxeHGRmGz8evsXaPJW6IumdbDvIVnmWMnIy2A==}
+  tsdown@file:../../../Users/ocavue/.config/packlink/tsdown-0.12.5-1748760041882.tgz:
+    resolution: {integrity: sha512-fJpoffzhSzjb/+VFZyVP7MPMky6ASITrDXlgRFiOncrMIl50eSYU84mRGbGVEO6PTkrwpkZgKrQ542+qxun3xA==, tarball: file:../../../Users/ocavue/.config/packlink/tsdown-0.12.5-1748760041882.tgz}
+    version: 0.12.5
     engines: {node: '>=18.0.0'}
     hasBin: true
     peerDependencies:
+      '@arethetypeswrong/core': ^0.18.1
       publint: ^0.3.0
+      rolldown-plugin-dts: '*'
       typescript: ^5.0.0
       unplugin-lightningcss: ^0.4.0
       unplugin-unused: ^0.5.0
     peerDependenciesMeta:
+      '@arethetypeswrong/core':
+        optional: true
       publint:
         optional: true
       typescript:
@@ -429,7 +439,7 @@ snapshots:
 
   resolve-pkg-maps@1.0.0: {}
 
-  rolldown-plugin-dts@0.13.6(rolldown@1.0.0-beta.10-commit.87188ed)(typescript@5.8.3):
+  rolldown-plugin-dts@file:../../../Users/ocavue/.config/packlink/rolldown-plugin-dts-0.13.7-1748768175379.tgz(rolldown@1.0.0-beta.10-commit.87188ed)(typescript@5.8.3):
     dependencies:
       '@babel/generator': 7.27.3
       '@babel/parser': 7.27.4
@@ -475,7 +485,7 @@ snapshots:
       fdir: 6.4.5(picomatch@4.0.2)
       picomatch: 4.0.2
 
-  tsdown@0.12.5(typescript@5.8.3):
+  tsdown@file:../../../Users/ocavue/.config/packlink/tsdown-0.12.5-1748760041882.tgz(rolldown-plugin-dts@file:../../../Users/ocavue/.config/packlink/rolldown-plugin-dts-0.13.7-1748768175379.tgz(rolldown@1.0.0-beta.10-commit.87188ed)(typescript@5.8.3))(typescript@5.8.3):
     dependencies:
       ansis: 4.1.0
       cac: 6.7.14
@@ -485,7 +495,7 @@ snapshots:
       empathic: 1.1.0
       hookable: 5.5.3
       rolldown: 1.0.0-beta.10-commit.87188ed
-      rolldown-plugin-dts: 0.13.6(rolldown@1.0.0-beta.10-commit.87188ed)(typescript@5.8.3)
+      rolldown-plugin-dts: file:../../../Users/ocavue/.config/packlink/rolldown-plugin-dts-0.13.7-1748768175379.tgz(rolldown@1.0.0-beta.10-commit.87188ed)(typescript@5.8.3)
       semver: 7.7.2
       tinyexec: 1.0.1
       tinyglobby: 0.2.14
@@ -493,9 +503,7 @@ snapshots:
     optionalDependencies:
       typescript: 5.8.3
     transitivePeerDependencies:
-      - oxc-resolver
       - supports-color
-      - vue-tsc
 
   typescript@5.8.3: {}
 

@@ -3,9 +3,7 @@
     {
       "path": "./tsconfig.node.json"
     },
-    {
-      "path": "./tsconfig.dom.json"
-    }
+ 
   ],
   "include": []
 }
