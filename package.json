@@ -1,0 +1,19 @@
+{
+  "name": "tsdown-composite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:tsdown": "tsdown",
+    "build:tsc": "tsc --build ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.11.0",
+  "devDependencies": {
+    "@types/node": "^22.15.29",
+    "tsdown": "0.11.13",
+    "typescript": "^5.8.3"
+  }
+}
